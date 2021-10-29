@@ -8,4 +8,9 @@
     <PackageReference Include="MudBlazor" Version="5.1.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DST.Domain\DST.Domain.csproj" />
+    <ProjectReference Include="..\DST.Infrastructure\DST.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
