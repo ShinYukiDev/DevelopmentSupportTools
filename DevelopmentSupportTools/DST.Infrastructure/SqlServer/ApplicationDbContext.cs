@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using DST.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace DST.Infrastructure.SqlServer
 {
@@ -7,5 +8,7 @@ namespace DST.Infrastructure.SqlServer
         public ApplicationDbContext(DbContextOptions options) : base(options)
         {
         }
+
+        public DbSet<DictionaryEntity> Dictionaries { get; set; }
     }
 }
